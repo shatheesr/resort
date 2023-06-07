@@ -1,0 +1,65 @@
+/* ContactUs.css */
+
+.co-form {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.co-form label {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.co-form input[type='text'],
+.co-form input[type='email'],
+.co-form input[type='tel'],
+.co-form input[type='number'],
+.co-form textarea,
+.co-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.co-form textarea {
+  resize: vertical;
+}
+
+.co-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.date-input {
+  position: relative;
+}
+
+.date-input .date-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+}
+
+.cobutton {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cont {
+  background-color: #2ef310;
+  width: 100%;
+  /* margin-top: 0%; */
+  /* margin-bottom: 0%; */
+  
+}
