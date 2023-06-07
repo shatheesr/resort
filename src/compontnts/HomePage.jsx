@@ -8,15 +8,15 @@ const HomePage = () => {
   
   return (
     <div>
-    <Head/>
     
+    <Head/>
       <main className='bomain'>
         <h2>About Us</h2>
         <p>Location: Pondicherry</p>
         <p>Near the Beach</p>
         <p>Enjoy your stay with us!</p>
-      </main>
       <Foot/>
+      </main>
 
      
     </div>
