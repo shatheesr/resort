@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/resort/static/css/main.093f5b97.css",
-    "main.js": "/resort/static/js/main.52f38215.js",
+    "main.js": "/resort/static/js/main.0cbf48cf.js",
     "static/js/787.cd1af3de.chunk.js": "/resort/static/js/787.cd1af3de.chunk.js",
     "static/media/pexels-maria-isabella-bernotti-1049298.jpg": "/resort/static/media/pexels-maria-isabella-bernotti-1049298.87011e592ff81a64f295.jpg",
     "static/media/cool-background.png": "/resort/static/media/cool-background.6ab8dcb585d2338e6764.png",
     "index.html": "/resort/index.html",
     "main.093f5b97.css.map": "/resort/static/css/main.093f5b97.css.map",
-    "main.52f38215.js.map": "/resort/static/js/main.52f38215.js.map",
+    "main.0cbf48cf.js.map": "/resort/static/js/main.0cbf48cf.js.map",
     "787.cd1af3de.chunk.js.map": "/resort/static/js/787.cd1af3de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.093f5b97.css",
-    "static/js/main.52f38215.js"
+    "static/js/main.0cbf48cf.js"
   ]
 }
