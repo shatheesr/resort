@@ -60,7 +60,7 @@ function ForgetPasswordPage() {
         {errorMessage && <p className="error-message">{errorMessage}</p>}
 
         {/* Success Message */}
-        {/* {successMessage && <p className="success-message">{successMessage}</p>} */}
+        {/* ~{successMessage && <p className="success-message">{successMessage}</p>} */}
 
         {/* Reset Password Button */}
         <button onClick={handleForgetPassword} className='but'>Reset Password</button>
