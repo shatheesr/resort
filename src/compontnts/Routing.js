@@ -12,7 +12,7 @@ import ForgetPasswordPage from './ForgetPasswordPage';
 export default function Routing() {
   return (
     <div>
-        <Router>
+        <Router basename='/resort'>
             <Routes>
 
             <Route path="/" element={<Login/>}/>
