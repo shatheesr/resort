@@ -1,0 +1,30 @@
+.services{
+    text-align: center;
+    background: var(--darkGrey);
+    background-color: #cfcfcf;
+
+    padding: 1rem 0;
+}
+.services-center {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px;
+  }
+  .service span {
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.services h6 {
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .services p {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--mainBlack);
+  }

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './css/LoginPage.css';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function ForgetPasswordPage() {
   const [username, setUsername] = useState('');
   const [password, setNewPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
   
 
   const handleForgetPassword = async () => {
@@ -19,6 +21,9 @@ function ForgetPasswordPage() {
         throw new Error('Failed to send reset password request');
       }
       alert(response.data);
+      if(response.data==="password has changed sucessfully"){
+        navigate('/');
+      }
 
       // setSuccessMessage('Reset password successful!');
     } catch (error) {

@@ -84,7 +84,7 @@ const handleloginSubmit = event => {
           Password:
           <input type="password" value={password} onChange={handlePasswordChange} className='inp'required/>
         </label>
-        <a href="#" role="link" tabindex="0">Forgotten your password?</a>
+        <a href="/resort/forgetpassword" role="link" tabindex="0">Forgotten your password?</a>
         <br />
         <button type="submit" onClick={handleSubmit} className='but'>Login</button>
         <p>Not a member?<h4 onClick={handleloginSubmit} className='forget'>Sign Up</h4></p>
