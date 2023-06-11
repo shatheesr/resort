@@ -12,11 +12,11 @@
   grid-template-columns: 100px 1fr;
   align-items: center;
 }
-
 .co-form input[type='text'],
 .co-form input[type='email'],
 .co-form input[type='tel'],
 .co-form input[type='number'],
+.co-form input[type="date"],
 .co-form textarea,
 .co-form select {
   width: 100%;
@@ -50,10 +50,17 @@
 
 .cobutton {
   padding: 10px 20px;
-  background-color: #ffffff;
+  margin: 10px;
+  margin-left: 30%;
+    /* padding: 10px 20px; */
+  background-color: #ea2f2f;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 40%;
+  align-items: center;
+  margin-bottom: 15px;
+  
 }
 
 .cont {

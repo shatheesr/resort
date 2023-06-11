@@ -22,6 +22,9 @@
 .services h6 {
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
+    font-size: 1em;
+    font-weight: bold;
+     margin-bottom: 1.5em;
   }
   .services p {
     width: 80%;

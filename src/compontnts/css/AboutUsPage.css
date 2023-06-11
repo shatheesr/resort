@@ -5,7 +5,8 @@
     padding-top: 20px;
     padding-bottom: 100px;
     /* background-image: url(/src/compontnts/img/cool-background.png); */
-    margin-bottom: -350px;
+    /* margin-bottom: -350px; */
+
     background: #7F7FD5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -15,7 +16,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
   .about-us-description {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #333;
+    color: #fff;
   }
   
   .about-us-section {

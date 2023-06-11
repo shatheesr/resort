@@ -1,0 +1,55 @@
+.conts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.ybo{
+  /* background: #c0c0aa;   */
+  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.cos-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.cos-table th,
+.cos-table td {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+
+.cos-table th {
+  /* background-color: #f2f2f2; */
+  background: #334d50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.cos-table td input,
+.cos-table td textarea {
+  width: 100%;
+  padding: 6px;
+}
+
+.cos-table td button {
+  margin-right: 4px;
+}
+
+.cos-table td button:last-child {
+  margin-right: 0;
+}
+
+/* .cos-table td input[type="date"] {
+  /* Customize the date input appearance if needed */
+/* } */ */
+
+.cos-table td textarea {
+  resize: vertical;
+}

@@ -45,7 +45,7 @@ function ChangePasswordPage() {
   };
 
   return (
-    <div>
+    <div className='full'>
       <Head />
       <div className="change-password-container">
         <h1>Change Password</h1>

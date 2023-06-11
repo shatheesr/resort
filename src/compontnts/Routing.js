@@ -9,6 +9,8 @@ import ProfilePage from './ProfilePage';
 import ChangePasswordPage from './ChangePasswordPage';
 import AboutUsPage from './AboutUsPage';
 import ForgetPasswordPage from './ForgetPasswordPage';
+import YourName from './YourName';
+import Image from './Image';
 export default function Routing() {
   return (
     <div>
@@ -23,6 +25,8 @@ export default function Routing() {
             <Route path='/changepassword' element={<ChangePasswordPage/>}/>
             <Route path='/aboutus' element={<AboutUsPage/>}/>
             <Route path='/forgetpassword' element={<ForgetPasswordPage/>}/>
+            <Route path='/yourbooking' element={<YourName/>}/>
+            <Route path='/image' element={<Image/>}/>
             </Routes>
         </Router>
 

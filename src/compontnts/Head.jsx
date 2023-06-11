@@ -25,6 +25,9 @@ const Head = () => {
     
  
   };
+  const handleImage = event =>{
+    navigate('/image')
+  }
   const handleprofile = event => {
     navigate('/profilepage');
     
@@ -33,11 +36,12 @@ const Head = () => {
   return (
     <div>
       <header>
-        <h1>Happy&nbsp;Mornings</h1>
+        <h1>GROVERT</h1>
         <div className="navigation"> 
-          <h3 onClick={handlehomeSubmit}>home</h3> 
+          <h3 onClick={handlehomeSubmit}>Home</h3> 
           <h3 onClick={handleaboutus}>About&nbsp;us</h3>
-          <h3 onClick={handleSubmit}>Contact&nbsp;Us</h3>
+          <h3 onClick={handleSubmit}>BOOKING</h3>
+          <h3 onClick={handleImage}>Images</h3>
           <div className="profile" onClick={handleprofile}>
             {/* Add your profile content here */}
             <Avatar alt="Remy Sharp" src="" />

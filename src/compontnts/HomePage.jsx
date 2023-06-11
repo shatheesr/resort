@@ -3,23 +3,19 @@ import Head from './Head';
 import Foot from './Foot';
 import './css/home.css'
 import Maphome from './Maphome';
-import { useNavigate } from 'react-router-dom';
 import Services from './Services';
 const HomePage = () => {
 
   
   return (
     <div className='bomain'>
-      {/* <main > */}
+      <main className='he' >
     <Head/>
-        {/* <h2>About Us</h2>
-        <p>Location: Pondicherry</p>
-        <p>Near the Beach</p>
-        <p>Enjoy your stay with us!</p> */}
+        
         <Services/>
         <Maphome/>
+      </main>
       <Foot/>
-      {/* </main> */}
 
      
     </div>

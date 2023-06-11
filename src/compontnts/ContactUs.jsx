@@ -55,13 +55,13 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div >
 
       <div className="cont">
-        <main>
       <Head />
+        <main>
           <div>
-            <h2>Contact Us</h2>
+            <h2>BOOKING</h2>
           </div>
           <div>
             <form onSubmit={handleSubmit} className="co-form">
@@ -143,16 +143,17 @@ const ContactUs = () => {
                 </label>
                 <div className="date-input">
                   <input
-                    type="text"
+                    type="date"
                     id="checkIn"
                     value={checkIn}
                     onChange={(e) => setCheckIn(e.target.value)}
                     required
+                    // style={{ height: '40px', width: '200px' }}
                   />
-                  <FontAwesomeIcon
+                  {/* <FontAwesomeIcon
                     icon={faCalendarAlt}
                     className="date-icon"
-                  />
+                  /> */}
                 </div>
               </div>
               <div>
@@ -161,16 +162,16 @@ const ContactUs = () => {
                 </label>
                 <div className="date-input">
                   <input
-                    type="text"
+                    type="date"
                     id="checkOut"
                     value={checkOut}
                     onChange={(e) => setCheckOut(e.target.value)}
                     required
                   />
-                  <FontAwesomeIcon
+                  {/* <FontAwesomeIcon
                     icon={faCalendarAlt}
                     className="date-icon"
-                  />
+                  /> */}
                 </div>
               </div>
               <div>

@@ -38,7 +38,8 @@ function ProfilePage() {
 
   const book = () => {
     // Add your booking functionality here
-    alert("Booking functionality is not implemented yet.");
+    navigate('/yourbooking');
+    // alert("Booking functionality is not implemented yet.");
   };
 
   const logout = () => {
@@ -70,6 +71,7 @@ function ProfilePage() {
 
   return (
     <div>
+      
       <Head/>
       <div className="profile-container">
         <h1>User Profile</h1>

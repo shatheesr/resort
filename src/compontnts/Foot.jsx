@@ -8,7 +8,7 @@ const Foot = () => {
       <footer>
         <div>
           <h3>Contact Information</h3>
-          <p>Address: 123 Beach Road, Pondicherry</p>
+          <p>Address: 123,Beach Road, Pondicherry</p>
           <p>Phone: +91 9876543210</p>
         </div>
       </footer>

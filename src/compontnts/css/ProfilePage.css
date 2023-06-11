@@ -3,6 +3,11 @@
     padding: 20px;
     background-color: aqua;
     /* width: fit-content; */
+    /* margin-bottom: 30px; */
+    height: 385px;
+    /* height: fit-content; */
+    /* height: auto; */
+    padding-bottom: 60px;
   }
   
   .details-container {

@@ -16,6 +16,7 @@ function ForgetPasswordPage() {
         username,
         password,
       });
+      
 
       if (!response.status === 200) {
         throw new Error('Failed to send reset password request');
