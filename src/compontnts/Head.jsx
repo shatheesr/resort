@@ -44,11 +44,13 @@ const Head = () => {
           <h3 onClick={handleImage}>Images</h3>
           <div className="profile" onClick={handleprofile}>
             {/* Add your profile content here */}
+            <div>
             <Avatar alt="Remy Sharp" src="" />
-            <br />
-            <br />
-            <br />
+            </div>
+            <div className='al'>
             <h4 className='pro'>{username}</h4>
+            </div>
+
           </div>
         </div>
       </header>

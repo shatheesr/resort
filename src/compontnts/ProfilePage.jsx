@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './css/ProfilePage.css';
 import Head from './Head';
 import Foot from './Foot';
+import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 
 function ProfilePage() {
@@ -50,24 +51,58 @@ function ProfilePage() {
   const changePassword = () => {
     navigate('/changepassword');
   };
-
   const deleteUser = async () => {
-    try {
-      const response = await fetch(`http://localhost:8080/user/${username}`, {
-        method: 'DELETE',
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to delete user');
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this Account!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then(async (willDelete) => {
+      if (willDelete) {
+        try {
+          const response = await fetch(`http://localhost:8080/user/${username}`, {
+            method: 'DELETE',
+          });
+  
+          if (!response.ok) {
+            throw new Error('Failed to delete user');
+          }
+  
+          localStorage.removeItem("username");
+          navigate('/');
+        } catch (error) {
+          console.error(error);
+          // Handle error cases
+        }
+        swal("Poof! Your Account has been deleted!", {
+          icon: "success",
+        });
+      } else {
+        swal("Your account is safe!");
       }
-
-      localStorage.removeItem("username");
-      navigate('/');
-    } catch (error) {
-      console.error(error);
-      // Handle error cases
-    }
+    });
   };
+  
+
+  // const deleteUser = async () => {
+    
+  //   try {
+  //     const response = await fetch(`http://localhost:8080/user/${username}`, {
+  //       method: 'DELETE',
+  //     });
+
+  //     if (!response.ok) {
+  //       throw new Error('Failed to delete user');
+  //     }
+
+  //     localStorage.removeItem("username");
+  //     navigate('/');
+  //   } catch (error) {
+  //     console.error(error);
+  //     // Handle error cases
+  //   }
+  // };
 
   return (
     <div>
