@@ -13,14 +13,14 @@ const Image = () => {
     <div>
       <Head/>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
-        <img src={img1} alt="Image 1" style={{ width: '33%' }} />
-        <img src={img2} alt="Image 2" style={{ width: '33%' }} />
-        <img src={img3} alt="Image 3" style={{ width: '33%' }} />
+        <img src={img1} alt="Image 1" style={{ width: '33.33%' }} />
+        <img src={img2} alt="Image 2" style={{ width: '33.33%' }} />
+        <img src={img3} alt="Image 3" style={{ width: '33.33%' }} />
       </div>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
-        <img src={img4} alt="Image 4" style={{ width: '33%' }} />
-        <img src={img5} alt="Image 5" style={{ width: '33%' }} />
-        <img src={img6} alt="Image 6" style={{ width: '33%' }} />
+        <img src={img4} alt="Image 4" style={{ width: '33.33%' }} />
+        <img src={img5} alt="Image 5" style={{ width: '33.33%' }} />
+        <img src={img6} alt="Image 6" style={{ width: '33.33%' }} />
       </div>
       <Foot/>
     </div>

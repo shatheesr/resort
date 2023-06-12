@@ -5,7 +5,7 @@ import Head from './Head';
 import Foot from './Foot';
 import axios from 'axios';
 import './css/ContactUs.css';
-
+import swal from 'sweetalert';
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -39,6 +39,11 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post(`http://localhost:8080/book/in`, data);
+    swal({
+      title: "Booking Successful!",
+      text: "You clicked the button!",
+      icon: "success",
+    });
 
     // Handle form submission logic here
 

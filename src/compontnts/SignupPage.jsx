@@ -38,6 +38,7 @@ const SignupPage = () => {
       .then(response => {
         // handle success
         navigate('/');
+        alert(response.data)
         console.log(response.data);
       })
       .catch(error => {

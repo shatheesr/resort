@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './css/LoginPage.css';
+import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
@@ -21,8 +22,13 @@ function ForgetPasswordPage() {
       if (!response.status === 200) {
         throw new Error('Failed to send reset password request');
       }
-      alert(response.data);
+      // alert(response.data);
       if(response.data==="password has changed sucessfully"){
+        swal({
+          title: "password has changed sucessfully",
+          text: "You clicked the button!",
+          icon: "success",
+        });
         navigate('/');
       }
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './css/ChangePasswordPage.css';
 import Head from './Head';
 import Foot from './Foot';
-
+import swal from 'sweetalert';
 function ChangePasswordPage() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -35,8 +35,11 @@ function ChangePasswordPage() {
       if (!response.ok) {
         throw new Error('Failed to change password');
       }
-
-      alert('Password changed successfully!');
+      swal({
+        title: "Password changed successfully!",
+        text: "You clicked the button!",
+        icon: "success",
+      });
     } catch (error) {
       console.error(error);
     //   alert()
